@@ -119,7 +119,6 @@ p {
 
 @media only screen and (max-width: 800px) {
   .container {
-    background-color: red;
     flex-direction: column;
   }
   .container-col {
