@@ -19,23 +19,21 @@ body {
   background-color: var(--color-bg);
 }
 .main {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer {
-  height: 20vh;
+  transform: translateY(-200px);
   justify-content: center;
   align-items: center;
 
   display: grid;
-  grid-gap: 24px;
+  grid-gap: 16px;
 
-  grid-template-columns: 76px 76px 76px;
-  grid-template-rows: 76px 76px 76px;
-  column-gap: 16px;
-  row-gap: 16px;
+  grid-template-columns: repeat(3, 76px);
+  grid-template-rows: repeat(2, 76px);
 }
 
 .container {
@@ -87,7 +85,7 @@ p {
   font-size: 1.5vw;
 }
 
-img {
+.logos {
   max-width: 76px;
   max-height: 76px;
 
