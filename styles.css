@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "nunito";
-  src: /* IE9 Compat Modes */ url("fonts/Nunito-Light.eot");
-  src: /* IE6-IE8 */ url("fonts/Nunito-Light.eot?#iefix")
-      format("embedded-opentype"),
-    /* Modern Browsers */ url("fonts/Nunito-Light.woff") format("woff"),
-    /* Safari, Android, iOS */ url("fonts/Nunito-Light.ttf") format("truetype"),
-    /* Legacy iOS */ url("fonts/Nunito-Light.svg#svgFontName") format("svg");
+  font-family: 'nunito';
+  src: /* IE9 Compat Modes */ url('fonts/Nunito-Light.eot');
+  src: /* IE6-IE8 */ url('fonts/Nunito-Light.eot?#iefix')
+      format('embedded-opentype'),
+    /* Modern Browsers */ url('fonts/Nunito-Light.woff') format('woff'),
+    /* Safari, Android, iOS */ url('fonts/Nunito-Light.ttf') format('truetype'),
+    /* Legacy iOS */ url('fonts/Nunito-Light.svg#svgFontName') format('svg');
 }
 
 :root {
@@ -35,13 +35,14 @@
 }
 
 .footer {
+  height: 0;
+  transform: translateY(-200%);
   justify-content: center;
   align-items: center;
   display: grid;
   grid-gap: 16px;
   grid-template-columns: repeat(3, 76px);
   grid-template-rows: repeat(2, 76px);
-  flex-grow: 3;
   padding-bottom: 5em;
 }
 
