@@ -35,15 +35,21 @@
 }
 
 .footer {
-  height: 0;
-  transform: translateY(-200%);
   justify-content: center;
   align-items: center;
+
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(3, 76px);
+  grid-template-columns: repeat(3, max(24px, 20vw));
   grid-template-rows: repeat(2, 76px);
   padding-bottom: 5em;
+}
+
+.footer > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
 }
 
 .container {
