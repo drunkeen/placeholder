@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "nunito";
-  src: /* IE9 Compat Modes */ url("fonts/Nunito-Light.eot");
-  src: /* IE6-IE8 */ url("fonts/Nunito-Light.eot?#iefix")
-      format("embedded-opentype"),
-    /* Modern Browsers */ url("fonts/Nunito-Light.woff") format("woff"),
-    /* Safari, Android, iOS */ url("fonts/Nunito-Light.ttf") format("truetype"),
-    /* Legacy iOS */ url("fonts/Nunito-Light.svg#svgFontName") format("svg");
+  font-family: 'nunito';
+  src: /* IE9 Compat Modes */ url('fonts/Nunito-Light.eot');
+  src: /* IE6-IE8 */ url('fonts/Nunito-Light.eot?#iefix')
+      format('embedded-opentype'),
+    /* Modern Browsers */ url('fonts/Nunito-Light.woff') format('woff'),
+    /* Safari, Android, iOS */ url('fonts/Nunito-Light.ttf') format('truetype'),
+    /* Legacy iOS */ url('fonts/Nunito-Light.svg#svgFontName') format('svg');
 }
 
 :root {
@@ -37,12 +37,18 @@
 .footer {
   justify-content: center;
   align-items: center;
+
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(3, 76px);
+  grid-template-columns: repeat(3, max(24px, 20vw));
   grid-template-rows: repeat(2, 76px);
-  flex-grow: 3;
   padding-bottom: 5em;
+}
+
+.footer > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -113,7 +119,6 @@ p {
 
 @media only screen and (max-width: 800px) {
   .container {
-    /* background-color: red; */
     flex-direction: column;
   }
   .container-col {
