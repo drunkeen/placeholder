@@ -1,11 +1,11 @@
 @font-face {
   font-family: "nunito";
-  src: url("fonts/Nunito-Light.eot"); /* IE9 Compat Modes */
-  src: url("fonts/Nunito-Light.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("fonts/Nunito-Light.woff") format("woff"),
-    /* Modern Browsers */ url("fonts/Nunito-Light.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("fonts/Nunito-Light.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
+  src: /* IE9 Compat Modes */ url("fonts/Nunito-Light.eot");
+  src: /* IE6-IE8 */ url("fonts/Nunito-Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* Modern Browsers */ url("fonts/Nunito-Light.woff") format("woff"),
+    /* Safari, Android, iOS */ url("fonts/Nunito-Light.ttf") format("truetype"),
+    /* Legacy iOS */ url("fonts/Nunito-Light.svg#svgFontName") format("svg");
 }
 
 :root {
@@ -18,20 +18,20 @@ body {
   margin: 0px;
   background-color: var(--color-bg);
 }
+
 .main {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer {
   transform: translateY(-200px);
   justify-content: center;
   align-items: center;
-
   display: grid;
   grid-gap: 16px;
-
   grid-template-columns: repeat(3, 76px);
   grid-template-rows: repeat(2, 76px);
 }
@@ -40,8 +40,8 @@ body {
   display: flex;
   max-width: 700px;
   min-width: 50%;
-
-  /* grid-gap: 16px; */ /* using padding instead in container box */
+  /* grid-gap: 16px; */
+  /* using padding instead in container box */
 }
 
 .container-col {
@@ -57,17 +57,21 @@ body {
 }
 
 /* colors */
+
 .title {
   color: var(--color-primary);
 }
+
 h3 {
   color: var(--color-secondary);
 }
+
 p {
   color: #ecede8;
 }
 
 /* fonts */
+
 h1,
 h3,
 p {
@@ -75,12 +79,15 @@ p {
 }
 
 /* Sizes */
+
 h1 {
   font-size: 4vw;
 }
+
 h3 {
   font-size: 2vw;
 }
+
 p {
   font-size: 1.5vw;
 }
@@ -88,10 +95,8 @@ p {
 .logos {
   max-width: 76px;
   max-height: 76px;
-
   min-width: 16px;
   min-height: 16px;
-
   width: 10vw;
   height: 10vw;
 }
@@ -101,19 +106,16 @@ p {
     /* background-color: red; */
     flex-direction: column;
   }
-
   .container-col {
     width: 100%;
     justify-content: center;
   }
-
   .container-col + .container-col {
     border-left: none;
     padding-left: 0;
     border-top: 1px solid #fff;
     padding-top: 16px;
   }
-
   h1 {
     font-size: 8vw;
   }
